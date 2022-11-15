@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Editing Article</h1>
+  <%= form_with model: @article do |form| %>
+  <div class="card">
+    <div class="card-body">
+    <div class="mb-3">
+      <%= form.text_field :title, {class: "form-control"} %>
+    </div>
+    <div class="mb-3">
+      <%= form.text_area :body, size: "60x10" %>
+    </div>
+
+    <%= form.submit %>
+
+    </div>
+  </div>
+  <% end %>
+</div>

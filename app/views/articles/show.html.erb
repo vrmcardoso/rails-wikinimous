@@ -1,0 +1,8 @@
+<div class="container">
+  <h2 class="text-primary"><%= @article.title %></h2>
+  <hr>
+  <p><%= @article.content %></p>
+    <%= link_to articles_path do %>
+      <button class="btn btn-primary">Back</button>
+    <% end %>
+</div>
