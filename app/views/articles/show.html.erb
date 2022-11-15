@@ -5,4 +5,10 @@
     <%= link_to articles_path do %>
       <button class="btn btn-primary">Back</button>
     <% end %>
+    <%= link_to edit_path(@article) do %>
+      <i class="fa-solid fa-pencil ml-2"></i>
+    <% end %>
+    <%= link_to destroy_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+      <i class="fa-solid fa-trash ml-2"></i>
+    <% end %>
 </div>

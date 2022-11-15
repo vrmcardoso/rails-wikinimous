@@ -1,3 +1,9 @@
+<div class="d-flex justify-content-between bg-light m-2">
+<h2>WikiCoins</h2>
+<%= link_to articles_new_path do %>
+  <button class="btn btn-primary">New Article</button>
+<% end %>
+</div>
 <div class="container">
   <% @articles.each do |article| %>
     <h1 class="d-flex justify-content-center text-primary"><%= link_to "#{article.title}", article_path(article) %></h1>
